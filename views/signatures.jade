@@ -4,37 +4,37 @@ block content
   .container
     .card
       .card-header
-        h4 Signatures
+        h4 Sygnatury
         ul.nav.nav-tabs.card-header-tabs#myTab(role='tablist')
           li.nav-item
-            a.nav-link.active#sign-tab(data-toggle='tab', href='#sign', role='tab', aria-controls='sign', aria-selected='true') Sign
+            a.nav-link.active#sign-tab(data-toggle='tab', href='#sign', role='tab', aria-controls='sign', aria-selected='true') Loguj
           li.nav-item
-            a.nav-link#verify-tab(data-toggle='tab', href='#verify', role='tab', aria-controls='verify', aria-selected='false') Verify
+            a.nav-link#verify-tab(data-toggle='tab', href='#verify', role='tab', aria-controls='verify', aria-selected='false') Sprawdź
       .card-body#card
         .tab-content#myTabContent
           .tab-pane.show.active#sign(role='tabpanel', aria-labelledby='sign-tab')
             form.form-horizontal
               .form-group
-                label.control-label(for='data') Message
+                label.control-label(for='data') Powiadomienie
                 textarea.form-control#sign-message('rows=5', aria-label='Message')
               .form-group
-                label.control-label(for='data') Private Key
+                label.control-label(for='data') Prywatny klucz
                 input#privateKey.form-control
               .form-group
-                button#sign-button.btn.btn-block.btn-primary(type='button') Sign
+                button#sign-button.btn.btn-block.btn-primary(type='button') Loguj
               .form-group
-                label.control-label(for='data') Message Signature
+                label.control-label(for='data') Sygnatura powiadomienia
                 input#sign-signature.form-control(disabled)
           .tab-pane#verify(role='tabpanel', aria-labelledby='verify-tab')
             form.form-horizontal
               .form-group
-                label.control-label(for='data') Message
+                label.control-label(for='data') Powiadomienie
                 textarea.form-control#verify-message('rows=5', aria-label='Message')
               .form-group
-                label.control-label(for='data') Public Key
+                label.control-label(for='data') Publiczny klucz
                 input#publicKey.form-control
               .form-group
-                label.control-label(for='data') Signature
+                label.control-label(for='data') Sygnatura
                 input#verify-signature.form-control
               .form-group
                 button#verify-button.btn.btn-block.btn-primary(type='button') Verify

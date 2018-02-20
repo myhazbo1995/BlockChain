@@ -4,18 +4,18 @@ block content
   .container
     .card
       .card-header
-        h4 Transaction
+        h4 Transakcje
         ul.nav.nav-tabs.card-header-tabs#myTab(role='tablist')
           li.nav-item
-            a.nav-link.active#sign-tab(data-toggle='tab', href='#sign', role='tab', aria-controls='sign', aria-selected='true') Sign
+            a.nav-link.active#sign-tab(data-toggle='tab', href='#sign', role='tab', aria-controls='sign', aria-selected='true') Logowanie
           li.nav-item
-            a.nav-link#verify-tab(data-toggle='tab', href='#verify', role='tab', aria-controls='verify', aria-selected='false') Verify
+            a.nav-link#verify-tab(data-toggle='tab', href='#verify', role='tab', aria-controls='verify', aria-selected='false') Sprawdź
       .card-body#card
         .tab-content#myTabContent
           .tab-pane.show.active#sign(role='tabpanel', aria-labelledby='sign-tab')
             form.form-horizontal
               .form-group
-                label.control-label(for='data') Message
+                label.control-label(for='data') Powiadomienie
                 .input-group
                   .input-group-addon $
                   input.form-control#sign-amount(value='20.00')
@@ -24,17 +24,17 @@ block content
                   .input-group-addon -&gt;
                   input.form-control#sign-to(value='04cc955bf8e359cc7ebbb66f4c2dc616a93e8ba08e93d27996e20299ba92cba9cbd73c2ff46ed27a3727ba09486ba32b5ac35dd20c0adec020536996ca4d9f3d74')
               .form-group
-                label.control-label(for='data') Private Key
+                label.control-label(for='data') Prywatny klucz
                 input#privateKey.form-control
               .form-group
-                button#sign-button.btn.btn-block.btn-primary(type='button') Sign
+                button#sign-button.btn.btn-block.btn-primary(type='button') Loguj
               .form-group
-                label.control-label(for='data') Message Signature
+                label.control-label(for='data') Sygnatura powidomienia
                 input#sign-signature.form-control(disabled)
           .tab-pane#verify(role='tabpanel', aria-labelledby='verify-tab')
             form.form-horizontal
               .form-group
-                label.control-label(for='data') Message
+                label.control-label(for='data') Powiadomienie
                 .input-group
                   .input-group-addon $
                   input.form-control#verify-amount(value='20.00')
@@ -43,7 +43,7 @@ block content
                   .input-group-addon -&gt;
                   input.form-control#verify-to(value='04cc955bf8e359cc7ebbb66f4c2dc616a93e8ba08e93d27996e20299ba92cba9cbd73c2ff46ed27a3727ba09486ba32b5ac35dd20c0adec020536996ca4d9f3d74')
               .form-group
-                label.control-label(for='data') Signature
+                label.control-label(for='data') Sygnatura
                 input#verify-signature.form-control
               .form-group
                 button#verify-button.btn.btn-block.btn-primary(type='button') Verify

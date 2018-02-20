@@ -4,11 +4,11 @@ html
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='A live blockchain demo in a browser.')
+    meta(name='description', content='BlockChain Mykhaila Nohasa.')
     
     link(rel='icon', href='/favicon.ico')
 
-    title Blockchain Demo
+    title Blockchain MN
 
     link(rel='stylesheet', href='/stylesheets/lib/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/lib/bootstrap-theme.min.css')
@@ -40,28 +40,29 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='/') #{__('Blockchain Demo')}
+          a.navbar-brand(href='/') #{__('Blockchain MN')}
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li(class={active: page === 'hash'})
-              a(href='/hash') #{__('Hash')}
+              a(href='/hash') #{__('Hasz')}
             li(class={active: page === 'block'})
-              a(href='/block') #{__('Block')}
+              a(href='/block') #{__('Blok')}
             li(class={active: page === 'blockchain'})
-              a(href='/blockchain') #{__('Blockchain')}
+              a(href='/blockchain') #{__('Ciąg bloków')}
             li(class={active: page === 'distributed'})
-              a(href='/distributed') #{__('Distributed')}
+              a(href='/distributed') #{__('Rozpowszechnianie')}
             li(class={active: page === 'tokens'})
-              a(href='/tokens') #{__('Tokens')}
+              a(href='/tokens') #{__('Tokeny')}
             li(class={active: page === 'coinbase'})
-              a(href='/coinbase') #{__('Coinbase')}
+              a(href='/coinbase') #{__('Pieniędzne tr.')}
             li.nav-item(class={active: page === 'keys'})
-              a.nav-link(href='/keys') #{__('Keys')}
+              a.nav-link(href='/keys') #{__('Klucze')}
             li.nav-item(class={active: page === 'signatures'})
-              a.nav-link(href='/signatures') #{__('Signatures')}
+              a.nav-link(href='/signatures') #{__('Sygnatury')}
             li.nav-item(class={active: page === 'transaction'})
-              a.nav-link(href='/transaction') #{__('Transaction')}
+              a.nav-link(href='/transaction') #{__('Transakcje')}
             li.nav-item(class={active: page === 'blockchainwithsignatures'})
-              a.nav-link(href='/blockchainwithsignatures') #{__('Blockchain with Signatures')}
+              a.nav-link(href='/blockchainwithsignatures') #{__('Ciąg bloków z podpisami')}
+    
 
     block content
